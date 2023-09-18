@@ -19,7 +19,16 @@ using namespace std;
 #include <d3dcompiler.h>
 #include <wrl.h>
 #include <DirectXMath.h>
+#include <DirectXTex/DirectXTex.h>		// 추가 경로 설정해준 것
+#include <DirectXTex/DirectXTex.inl>
+using namespace DirectX;
+using namespace Microsoft::WRL;
 
+#pragma comment(lib, "d3d11.lib")
+#pragma comment(lib, "d3dcompiler.lib")
 
-
-
+#ifdef _DEBUG
+#pragma comment(lib, "DirectXTex\\DirectXTex_debug.lib")
+#else
+#pragma comment(lib, "DirectXTex\\DirectXTex.lib")
+#endif
