@@ -8,6 +8,8 @@
 #include <list>
 #include <map>
 #include <unordered_map>
+#include <string>
+#include <xstring>
 using namespace std;
 
 // WIN
